@@ -10,3 +10,6 @@ g2<-ggplot(a_cheesecake, aes(x=what, y=cheesecake))+geom_boxplot()+geom_point(ae
 g2
 g3<-ggplot(a_cheesecake, aes(x=a, y=cheesecake))+geom_point(aes(col=what))+geom_jitter()
 g3
+a_cheesecake$bananabread<-log(cheesecake)
+g4<-ggplot(a_cheesecake, aes(x=a, y=bananabread))+geom_point(aes(col=what))+geom_jitter()
+g4
