@@ -8,3 +8,5 @@ g1
 a_cheesecake$what<-rep(c("yes","no"),100)
 g2<-ggplot(a_cheesecake, aes(x=what, y=cheesecake))+geom_boxplot()+geom_point(aes(col=a))+geom_jitter()
 g2
+g3<-ggplot(a_cheesecake, aes(x=a, y=cheesecake))+geom_point(aes(col=what))+geom_jitter()
+g3
