@@ -13,3 +13,6 @@ g3
 a_cheesecake$bananabread<-log(cheesecake)
 g4<-ggplot(a_cheesecake, aes(x=a, y=bananabread))+geom_point(aes(col=what))+geom_jitter()
 g4
+g5<-ggplot(a_cheesecake, aes(x=cheesecake))+geom_histogram(aes(col=what))+geom_histogram(aes(x=bananabread,col=what))
+g5
+pie<-3.14*c(a_cheesecake$cheesecake,a_cheesecake$bananabread)
