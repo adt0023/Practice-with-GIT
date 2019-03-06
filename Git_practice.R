@@ -16,4 +16,6 @@ g4
 g5<-ggplot(a_cheesecake, aes(x=cheesecake))+geom_histogram(aes(col=what))+geom_histogram(aes(x=bananabread,col=what))
 g5
 pie<-3.14*c(a_cheesecake$cheesecake,a_cheesecake$bananabread)
-applegrams<-rep(c("alpha","beta","gamma"),200)
+
+applegrams<-rep(c("alpha","beta"),100)
+a_cheesecake$applegrams<-applegrams
