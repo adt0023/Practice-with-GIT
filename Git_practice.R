@@ -17,3 +17,9 @@ g5<-ggplot(a_cheesecake, aes(x=cheesecake))+geom_histogram(aes(col=what))+geom_h
 g5
 pie<-3.14*c(a_cheesecake$cheesecake,a_cheesecake$bananabread)
 a_cheesecake$pie<-head(sqrt(pie),200)
+a_cheesecake$pie<-head(sqrt(pie),200)
+
+bananagrams<- rep(c("A","E"),200)
+
+applegrams<-rep(c("alpha","beta"),100)
+a_cheesecake$applegrams<-applegrams
